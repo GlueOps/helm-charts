@@ -13,6 +13,7 @@ tacoWebpage:
       ingressName: hello-world-ingress
       ingressClassName: external-ingress-nginx
       host: hello-world.gcp.glueops.rocks
+      clusterIssuer: glueops-cert-zerossl-prod
 
   serviceConfig:
     serviceName: hello-world-service
