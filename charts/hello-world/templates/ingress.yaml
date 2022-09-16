@@ -2,7 +2,8 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: {{ .Values.tacoWebpage.applicationConfig.ingress.ingressName }}
-  cert-manager.io/cluster-issuer: {{ .Values.tacoWebpage.applicationConfig.ingress.clusterIssuer }}
+  annotations:
+    cert-manager.io/cluster-issuer: {{ .Values.tacoWebpage.applicationConfig.ingress.clusterIssuer }}
 spec:
   ingressClassName: {{ .Values.tacoWebpage.applicationConfig.ingress.ingressClassName }}
   # hosts:
