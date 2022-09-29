@@ -7,7 +7,7 @@ tacoWebpage:
 
   applicationConfig:
     appName: hello-world
-    image: antoniostacos/taco-webpage:0.2.0
+    image: antoniostacos/taco-webpage:v0.4.0
     containerPort: 8080
     ingress:
       ingressName: hello-world-ingress
