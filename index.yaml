@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   hello-world:
   - apiVersion: v2
+    appVersion: 0.5.0
+    created: "2022-09-30T14:52:22.789441601Z"
+    description: A Helm chart for Kubernetes
+    digest: aa53d003a1f0c29b39b2093e7225a318ae00a062b19851ef8fcd29539d04fc5f
+    name: hello-world
+    type: application
+    urls:
+    - https://github.com/GlueOps/helm-charts/releases/download/hello-world-0.3.0/hello-world-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
     appVersion: 0.4.0
     created: "2022-09-29T19:19:49.597247151Z"
     description: A Helm chart for Kubernetes
@@ -52,4 +62,4 @@ entries:
     urls:
     - https://github.com/GlueOps/helm-charts/releases/download/postgrescluster-0.1.0/postgrescluster-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-29T19:19:49.597262151Z"
+generated: "2022-09-30T14:52:22.789458901Z"
