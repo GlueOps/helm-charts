@@ -21,8 +21,8 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: {{ .Values.tacoWebpage.applicationConfig.containerPort }}
-        env: 
-          {{- range $name, $item := .Values.tacoWebpage.applicationConfig.env }}
-          - name: {{ $name }}
-            {{- $item | toYaml | nindent 14 }}
-          {{- end }}
+        env:
+        {{ range $k, $v := .Values.tacoWebpage.env }}
+          - name: {{ $k | quote }}
+            value: {{ $v | quote }}
+        {{- end }}

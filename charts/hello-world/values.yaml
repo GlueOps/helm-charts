@@ -12,6 +12,6 @@ tacoWebpage:
     ingress:
       host: hello-world.gcp.glueops.rocks
     env:
-      FOO:
-        value: "some foo value"
+      "ASPNETCORE_ENVIRONMENT": "Staging"
+      "ASPNETCORE_FORWARDEDHEADERS_ENABLED": "true"
 
