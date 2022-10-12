@@ -1,34 +1,28 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.tacoWebpage.applicationConfig.appName }}
+  name: {{ .Release.Name }}
   labels:
-    app: {{ .Values.tacoWebpage.applicationConfig.appName }}
+    app: {{ .Release.Name }}
 spec:
   selector:
     matchLabels:
-      app: {{ .Values.tacoWebpage.applicationConfig.appName }}
+      app: {{ .Release.Name }}
   replicas: {{ .Values.tacoWebpage.replicaCount }}
   template:
     metadata:
       labels:
-        app: {{ .Values.tacoWebpage.applicationConfig.appName }}
+        app: {{ .Release.Name }}
     spec:
-      serviceAccountName: {{ .Values.tacoWebpage.applicationConfig.appName }}
+      serviceAccountName: {{ .Release.Name }}
       containers:
       - name: app
         image: {{ .Values.tacoWebpage.applicationConfig.image }}
         imagePullPolicy: Always
         ports:
         - containerPort: {{ .Values.tacoWebpage.applicationConfig.containerPort }}
-        env:
-        - name: DATABASE_USERNAME
-          value: {{ .Values.tacoWebpage.applicationConfig.database.username | quote  }}
-        - name: DATABASE_PASSWORD
-          value: {{ .Values.tacoWebpage.applicationConfig.database.password | quote }}
-        - name: DATABASE_NAME
-          value: {{ .Values.tacoWebpage.applicationConfig.database.name | quote  }}
-        - name: DATABASE_HOST
-          value: {{ .Values.tacoWebpage.applicationConfig.database.host | quote  }}
-        - name: DATABASE_PORT
-          value: {{ .Values.tacoWebpage.applicationConfig.database.port | quote  }}
+        env: 
+          {{- range $name, $item := .Values.applicationConfig.env }}
+          - name: {{ $name }}
+            {{- $item | toYaml | nindent 14 }}
+          {{- end }}

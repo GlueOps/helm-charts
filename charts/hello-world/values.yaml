@@ -10,18 +10,8 @@ tacoWebpage:
     image: antoniostacos/taco-webpage:v0.5.2
     containerPort: 8080
     ingress:
-      ingressName: hello-world-ingress
-      ingressClassName: external-ingress-nginx
       host: hello-world.gcp.glueops.rocks
-      clusterIssuer: glueops-cert-zerossl-prod
-    database:
-      username: postgres
-      password: postgres
-      name: postgres
-      host: localhost
-      port: 5432
+    env:
+      FOO:
+        value: "some foo value"
 
-  serviceConfig:
-    serviceName: hello-world-service
-    tls:
-      secretName: hello-world-tls

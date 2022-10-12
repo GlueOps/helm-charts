@@ -1,11 +1,11 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: {{ .Values.tacoWebpage.applicationConfig.ingress.ingressName }}
+  name: {{ .Release.Name }}
   annotations:
-    cert-manager.io/cluster-issuer: {{ .Values.tacoWebpage.applicationConfig.ingress.clusterIssuer }}
+    cert-manager.io/cluster-issuer: glueops-cert-zerossl-prod
 spec:
-  ingressClassName: {{ .Values.tacoWebpage.applicationConfig.ingress.ingressClassName }}
+  ingressClassName: external-ingress-nginx
   # hosts:
   #   - host: test-app.gcp.glueops.rocks
   rules:
@@ -14,12 +14,12 @@ spec:
       paths:
         - backend:
             service:
-              name: {{ .Values.tacoWebpage.serviceConfig.serviceName }}
+              name: {{ .Release.Name }}
               port:
                 number: {{ .Values.tacoWebpage.applicationConfig.containerPort }}
           path: /
           pathType: Prefix
   tls:
-    - secretName: {{ .Values.tacoWebpage.serviceConfig.tls.secretName }}
+    - secretName: {{ .Release.Name }}-tls
       hosts:
         - {{ .Values.tacoWebpage.applicationConfig.ingress.host }}
