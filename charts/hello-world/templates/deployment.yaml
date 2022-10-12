@@ -22,7 +22,7 @@ spec:
         ports:
         - containerPort: {{ .Values.tacoWebpage.applicationConfig.containerPort }}
         env:
-        {{ range $k, $v := .Values.tacoWebpage.env }}
+        {{ range $k, $v := .Values.env }}
           - name: {{ $k | quote }}
             value: {{ $v | quote }}
         {{- end }}
