@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  gcp-cloudsql-postgres:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-10-17T22:37:15.227170625Z"
+    description: A Helm chart to deploy Postgres via CloudSQL
+    digest: d6f07db9fdc6ce54d63aba451b9da8a100b85493059b699db7d19648bef875ce
+    name: gcp-cloudsql-postgres
+    type: application
+    urls:
+    - https://github.com/GlueOps/helm-charts/releases/download/gcp-cloudsql-postgres-0.1.0/gcp-cloudsql-postgres-0.1.0.tgz
+    version: 0.1.0
   hello-world:
   - apiVersion: v2
     appVersion: v0.5.2
@@ -122,4 +133,4 @@ entries:
     urls:
     - https://github.com/GlueOps/helm-charts/releases/download/postgrescluster-0.1.0/postgrescluster-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-12T01:45:29.749423658Z"
+generated: "2022-10-17T22:37:15.227213525Z"
