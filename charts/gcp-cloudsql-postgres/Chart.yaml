@@ -1,5 +1,5 @@
 apiVersion: v2
-name: Google Cloud Cloud SQL Postgres
+name: gcp-cloudsql-postgres
 description: A Helm chart to deploy Postgres via CloudSQL
 
 # A chart can be either an 'application' or a 'library' chart.
