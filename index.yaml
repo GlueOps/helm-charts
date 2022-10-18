@@ -133,4 +133,15 @@ entries:
     urls:
     - https://github.com/GlueOps/helm-charts/releases/download/postgrescluster-0.1.0/postgrescluster-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-17T22:37:15.227213525Z"
+  vault-init:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-10-18T22:38:12.997796149Z"
+    description: A Helm chart to initalize vault
+    digest: 2ab437f6d910ed4df2c875eedc8a1787968ca904ac70c22d1428539f8d5caa2c
+    name: vault-init
+    type: application
+    urls:
+    - https://github.com/GlueOps/helm-charts/releases/download/vault-init-0.1.0/vault-init-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-10-18T22:38:12.998138155Z"
