@@ -15,6 +15,10 @@ spec:
       sensitive: false
       value: "{{ .Values.TOGGLE_TO_RERUN }}"
       environmentVariable: true
+    - key: GLUEOPS_ENV
+      sensitive: false
+      value: "{{ .Values.GLUEOPS_ENV }}"
+      environmentVariable: false
     - key: VAULT_ADDR
       sensitive: false
       value: "{{ .Values.VAULT_ADDR }}"
