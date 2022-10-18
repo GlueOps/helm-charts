@@ -19,7 +19,3 @@ spec:
       sensitive: false
       value: "{{ .Values.GLUEOPS_ENV }}"
       environmentVariable: false
-    - key: VAULT_ADDR
-      sensitive: false
-      value: "{{ .Values.VAULT_ADDR }}"
-      environmentVariable: true

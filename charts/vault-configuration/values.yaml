@@ -3,6 +3,4 @@
 
 TOGGLE_TO_RERUN: 1
 TFC_ORG_NAME: "tfc-org-name-goes-here"
-VAULT_ADDR: "https://vault.production.glueops.rocks"
 GLUEOPS_ENV: "glueops-environment-name"
-
