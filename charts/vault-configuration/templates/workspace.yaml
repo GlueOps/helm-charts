@@ -1,0 +1,25 @@
+apiVersion: app.terraform.io/v1alpha1
+kind: Workspace
+metadata:
+  name: "vault-configuration"
+spec:
+  organization: "{{ .Values.TFC_ORG_NAME }}"
+  secretsMountPath: "/tmp/secrets"
+  module:
+    source: "git::https://github.com/GlueOps/terraform-vault-configuration.git"
+  variables:
+    - key: GOOGLE_CREDENTIALS
+      sensitive: true
+      environmentVariable: true
+    - key: TOGGLE_TO_RERUN
+      sensitive: false
+      value: "{{ .Values.TOGGLE_TO_RERUN }}"
+      environmentVariable: true
+    - key: VAULT_ADDR
+      sensitive: false
+      value: "{{ .Values.VAULT_ADDR }}"
+      environmentVariable: true
+    - key: VAULT_TOKEN
+      sensitive: true
+      value: "{{ .Values.VAULT_TOKEN }}"
+      environmentVariable: true

@@ -1,0 +1,9 @@
+
+
+
+TOGGLE_TO_RERUN: 1
+VAULT_ADDR: "https://vault.production.glueops.rocks"
+
+#get this token from the vault-init terraform state in TFC:
+VAULT_TOKEN: "root-vault-token-goes-here"
+
