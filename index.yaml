@@ -136,6 +136,16 @@ entries:
   vault-configuration:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2022-10-18T22:59:51.563097488Z"
+    description: A Helm chart to initalize vault
+    digest: 71c06c9bc1fe670a9e1a30c7734ebd0456f19feb6aad9721b73fb61ac2443650
+    name: vault-configuration
+    type: application
+    urls:
+    - https://github.com/GlueOps/helm-charts/releases/download/vault-configuration-0.2.1/vault-configuration-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2022-10-18T22:52:57.171376799Z"
     description: A Helm chart to initalize vault
     digest: 87153d53ff61ddf8bb6695f0bf1a7e5de20e853b46725309423e6f53e1636025
@@ -165,4 +175,4 @@ entries:
     urls:
     - https://github.com/GlueOps/helm-charts/releases/download/vault-init-0.1.0/vault-init-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-18T22:52:57.171619605Z"
+generated: "2022-10-18T22:59:51.563146789Z"
