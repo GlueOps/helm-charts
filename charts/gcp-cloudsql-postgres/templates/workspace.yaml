@@ -11,6 +11,10 @@ spec:
     - key: GOOGLE_CREDENTIALS
       sensitive: true
       environmentVariable: true
+    - key: GLUEOPS_ENV
+      sensitive: false
+      value: "{{ .Values.GLUEOPS_ENV }}"
+      environmentVariable: false
     - key: TOGGLE_TO_RERUN
       sensitive: false
       value: "{{ .Values.TOGGLE_TO_RERUN }}"
