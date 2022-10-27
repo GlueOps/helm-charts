@@ -1,7 +1,7 @@
 apiVersion: app.terraform.io/v1alpha1
 kind: Workspace
 metadata:
-  name: "snowflake-data-integrator-{{ .Values.INTEGRATOR_NAME }}"
+  name: "snowflake-data-integrator-{{ (lower .Values.INTEGRATOR_NAME) }}"
 spec:
   organization: "{{ .Values.TFC_ORG_NAME }}"
   secretsMountPath: "/tmp/secrets"
