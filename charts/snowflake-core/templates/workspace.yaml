@@ -1,7 +1,7 @@
 apiVersion: app.terraform.io/v1alpha1
 kind: Workspace
 metadata:
-  name: "{{ .Values.DB_CLUSTER_NAME }}"
+  name: "snowflake-core"
 spec:
   organization: "{{ .Values.TFC_ORG_NAME }}"
   secretsMountPath: "/tmp/secrets"

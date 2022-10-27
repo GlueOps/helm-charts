@@ -2,7 +2,7 @@
 
 
 TOGGLE_TO_RERUN: 1
-TFC_ORG_NAME: "dev-venkata"
+TFC_ORG_NAME: "tfc-org-name-goes-here"
 SNOWFLAKE_REGION: "us-central1.gcp"
 SNOWFLAKE_ACCOUNT: "XXXXXXXX"
 SNOWFLAKE_USER: "terraform"
