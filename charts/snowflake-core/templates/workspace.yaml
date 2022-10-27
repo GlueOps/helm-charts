@@ -17,7 +17,7 @@ spec:
       value: "{{ .Values.SNOWFLAKE_REGION }}"
       environmentVariable: true
     - key: SNOWFLAKE_ACCOUNT
-      sensitive: true
+      sensitive: false
       value: "{{ .Values.SNOWFLAKE_ACCOUNT }}"
       environmentVariable: true
     - key: SNOWFLAKE_USER
@@ -25,7 +25,7 @@ spec:
       value: "{{ .Values.SNOWFLAKE_USER }}"
       environmentVariable: true
     - key: SNOWFLAKE_PASSWORD
-      sensitive: true
+      sensitive: false
       value: "{{ .Values.SNOWFLAKE_PASSWORD }}"
       environmentVariable: true
     - key: SNOWFLAKE_ROLE
