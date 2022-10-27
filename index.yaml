@@ -293,6 +293,16 @@ entries:
   web-app:
   - apiVersion: v2
     appVersion: v0.2.2
+    created: "2022-10-27T23:48:28.889298217Z"
+    description: A Helm chart for Kubernetes web apps
+    digest: 3b6377b0361636c7c19591de36f7568328835603c8be3cc106ca4f4f56a96887
+    name: web-app
+    type: application
+    urls:
+    - https://github.com/GlueOps/helm-charts/releases/download/web-app-0.2.0/web-app-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: v0.2.2
     created: "2022-10-27T23:38:21.604741387Z"
     description: A Helm chart for Kubernetes web apps
     digest: 344e87899acb87ac572870299db35617791764d3761d3fe9e643c268388ba7d9
@@ -301,4 +311,4 @@ entries:
     urls:
     - https://github.com/GlueOps/helm-charts/releases/download/web-app-0.1.0/web-app-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-27T23:38:21.605056588Z"
+generated: "2022-10-27T23:48:28.889680219Z"
