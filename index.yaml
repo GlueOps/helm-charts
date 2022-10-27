@@ -174,6 +174,18 @@ entries:
     urls:
     - https://github.com/GlueOps/helm-charts/releases/download/snowflake-core-0.1.0/snowflake-core-0.1.0.tgz
     version: 0.1.0
+  snowflake-data-integrator:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-10-27T17:04:09.418750736Z"
+    description: A Helm chart to deploy the required Snowflake infrastructure for
+      a third-party data integrator
+    digest: 378de1a6014c65bb5c24a7bb3f149dac4127f38d9c22d5c92c858d02cbbdf870
+    name: snowflake-data-integrator
+    type: application
+    urls:
+    - https://github.com/GlueOps/helm-charts/releases/download/snowflake-data-integrator-0.1.0/snowflake-data-integrator-0.1.0.tgz
+    version: 0.1.0
   vault-configuration:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -256,4 +268,4 @@ entries:
     urls:
     - https://github.com/GlueOps/helm-charts/releases/download/vault-init-0.1.0/vault-init-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-27T16:40:01.863923633Z"
+generated: "2022-10-27T17:04:09.418823439Z"
