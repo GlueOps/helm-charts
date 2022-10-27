@@ -146,6 +146,16 @@ entries:
   snowflake-core:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2022-10-27T16:40:01.863582835Z"
+    description: A Helm chart to deploy core Snowflake infrastructure
+    digest: 45d5c9139094badd2ca746299292301ab3fe08ebcf1103a4c7edbaf19aa19234
+    name: snowflake-core
+    type: application
+    urls:
+    - https://github.com/GlueOps/helm-charts/releases/download/snowflake-core-0.1.2/snowflake-core-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2022-10-27T16:35:21.472940656Z"
     description: A Helm chart to deploy core Snowflake infrastructure
     digest: 4075d9b629c7be6a9b4aecab10cad28e3bfa1882caedaecf4e78e971d422706b
@@ -246,4 +256,4 @@ entries:
     urls:
     - https://github.com/GlueOps/helm-charts/releases/download/vault-init-0.1.0/vault-init-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-27T16:35:21.473114359Z"
+generated: "2022-10-27T16:40:01.863923633Z"
