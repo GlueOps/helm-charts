@@ -290,4 +290,15 @@ entries:
     urls:
     - https://github.com/GlueOps/helm-charts/releases/download/vault-init-0.1.0/vault-init-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-27T17:34:26.093357068Z"
+  web-app:
+  - apiVersion: v2
+    appVersion: v0.2.2
+    created: "2022-10-27T23:38:21.604741387Z"
+    description: A Helm chart for Kubernetes web apps
+    digest: 344e87899acb87ac572870299db35617791764d3761d3fe9e643c268388ba7d9
+    name: web-app
+    type: application
+    urls:
+    - https://github.com/GlueOps/helm-charts/releases/download/web-app-0.1.0/web-app-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-10-27T23:38:21.605056588Z"
