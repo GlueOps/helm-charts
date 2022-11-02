@@ -8,22 +8,6 @@ spec:
   module:
     source: "git::https://github.com/GlueOps/terraform-vault-configuration.git"
   variables:
-{{- if eq "gcp" .Values.CLOUD }}
-    - key: GOOGLE_CREDENTIALS
-      sensitive: true
-      environmentVariable: true
-{{- end }}
-{{- if eq "aws" .Values.CLOUD }}
-    - key: AWS_REGION
-      sensitive: true
-      environmentVariable: true
-    - key: AWS_ACCESS_KEY_ID
-      sensitive: true
-      environmentVariable: true
-    - key: AWS_SECRET_ACCESS_KEY
-      sensitive: true
-      environmentVariable: true
-{{- end }}
     - key: TOGGLE_TO_RERUN
       sensitive: false
       value: "{{ .Values.TOGGLE_TO_RERUN }}"
