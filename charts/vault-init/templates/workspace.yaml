@@ -3,14 +3,14 @@ kind: Workspace
 metadata:
   name: "vault-init"
 spec:
-  organization: "{{ .Values.TFC_ORG_NAME }}"
+  organization: "this-is-defined-at-the-cluster-level-for-your-organization"
   secretsMountPath: "/tmp/secrets"
   module:
     source: "git::https://github.com/GlueOps/terraform-vault-init.git"
   variables:
-    - key: TOGGLE_TO_RERUN
+    - key: RUN_DEPLOYMENT_NUMBER
       sensitive: false
-      value: "{{ .Values.TOGGLE_TO_RERUN }}"
+      value: "{{ .Values.RUN_DEPLOYMENT_NUMBER }}"
       environmentVariable: true
     - key: VAULT_ADDR
       sensitive: false
