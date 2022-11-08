@@ -12,7 +12,3 @@ spec:
       sensitive: false
       value: "{{ .Values.RUN_DEPLOYMENT_NUMBER }}"
       environmentVariable: true
-    - key: VAULT_ADDR
-      sensitive: false
-      value: "{{ .Values.VAULT_ADDR }}"
-      environmentVariable: false

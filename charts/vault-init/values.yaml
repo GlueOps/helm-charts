@@ -2,4 +2,3 @@
 
 
 RUN_DEPLOYMENT_NUMBER: 1
-VAULT_ADDR: "https://vault.production.glueops.rocks"
