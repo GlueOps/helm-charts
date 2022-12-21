@@ -57,4 +57,3 @@ spec:
     pod:
       imagePullSecrets:
         - name: regcred
-GlueOps/helm-charts/charts/kafka-connect/values.yaml
