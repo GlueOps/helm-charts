@@ -132,6 +132,17 @@ entries:
     urls:
     - https://github.com/GlueOps/helm-charts/releases/download/hello-world-0.1.2/hello-world-0.1.2.tgz
     version: 0.1.2
+  kafka:
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2022-12-21T22:52:29.437296816Z"
+    description: A Helm chart for deploying a kafka cluster
+    digest: e4a5b82f6d27293d849ff94085c55d92f6e3ac9d40bbe4898a3f7dbd00a35c01
+    name: kafka
+    type: application
+    urls:
+    - https://github.com/GlueOps/helm-charts/releases/download/kafka-0.1.0/kafka-0.1.0.tgz
+    version: 0.1.0
   postgrescluster:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -391,4 +402,4 @@ entries:
     urls:
     - https://github.com/GlueOps/helm-charts/releases/download/web-app-0.1.0/web-app-0.1.0.tgz
     version: 0.1.0
-generated: "2022-11-08T05:37:33.664873711Z"
+generated: "2022-12-21T22:52:29.437579512Z"
