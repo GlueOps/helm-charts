@@ -146,6 +146,16 @@ entries:
   kafka-connect:
   - apiVersion: v2
     appVersion: v0.1.0
+    created: "2022-12-21T23:39:55.128124285Z"
+    description: A Helm chart for deploying a kafka connect cluster
+    digest: 6222672df52b41b12a59b688fa47cba8225ca03ed8d0e1626d38e8477fe6a7ce
+    name: kafka-connect
+    type: application
+    urls:
+    - https://github.com/GlueOps/helm-charts/releases/download/kafka-connect-0.1.1/kafka-connect-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: v0.1.0
     created: "2022-12-21T23:33:27.519362169Z"
     description: A Helm chart for deploying a kafka connect cluster
     digest: 4510dc0157c7f274b81f0ef93b70cd6796040fef4a50e979684f1ba76f1232fc
@@ -413,4 +423,4 @@ entries:
     urls:
     - https://github.com/GlueOps/helm-charts/releases/download/web-app-0.1.0/web-app-0.1.0.tgz
     version: 0.1.0
-generated: "2022-12-21T23:33:27.519428569Z"
+generated: "2022-12-21T23:39:55.128220089Z"
